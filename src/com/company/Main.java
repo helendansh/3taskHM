@@ -5,22 +5,22 @@ public class Main {
 
     public static void main(String[] args) {
         Map<String,String> testmap = createMap();
-        getCountTheSameFirstName(testmap, "Александра"); //проверка
-        getCountTheSameLastName(testmap, "Смирнов");
+        System.out.println(getCountTheSameFirstName(testmap, "Александра"));
+        System.out.println(getCountTheSameLastName(testmap, "Смирнов"));
     }
 
     public static Map<String, String> createMap () {
         Map <String, String> map = new HashMap<>();
-        map.put("Иванов", "Владимир");
-        map.put("Петров", "Евгений");
+        map.put("Смирнов", "Павел");
+        map.put("Петров", "Александра");
         map.put("Смирнов", "Роман");
         map.put("Воробьева", "Анастасия");
         map.put("Крылова", "Александра");
         map.put("Быков", "Евгений");
-        map.put("Дятлов", "Константин");
+        map.put("Дятлов", "Александра");
         map.put("Волкова", "Надежда");
         map.put("Зайцев", "Егор");
-        map.put("Семенова", "Александра");
+        map.put("Смирнов", "Александра");
         return map;
     }
     public static int getCountTheSameFirstName(Map<String, String>map, String name) {
